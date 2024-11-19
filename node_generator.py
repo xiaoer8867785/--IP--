@@ -9,7 +9,7 @@ import pyperclip  # 用于复制到剪贴板
 class NodeGeneratorGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("节点生成器 v1.0.2 - By YouTube科技共享")
+        self.root.title("节点生成器 v1.0.2 - By YouTubexiaoer886")
         self.root.geometry("800x800")
         self.generator = NodeGenerator()
         
@@ -17,7 +17,7 @@ class NodeGeneratorGUI:
         version_frame = ttk.Frame(self.root, padding="5")
         version_frame.grid(row=0, column=0, sticky=(tk.W, tk.E))
         ttk.Label(version_frame, 
-                 text="节点生成器 v1.0.2\n作者：YouTube科技共享", 
+                 text="节点生成器 v1.0.2\n作者：YouTubexiaoer886", 
                  justify=tk.CENTER).grid(row=0, column=0, pady=5)
         
         # 创建主框架
@@ -189,8 +189,8 @@ class NodeGenerator:
             new_node = re.sub(r'@.*?:', f'@{ip}:', base_part)
             new_node = re.sub(r':\d+\?', f':{port}?', new_node)
             
-            # 添加新的节点名称（格式：地区 YouTube科技共享）
-            new_node = f"{new_node}#{region} YouTube科技共享"
+            # 添加新的节点名称（格式：地区 YouTubexiaoer886）
+            new_node = f"{new_node}#{region} YouTubexiaoer886"
             
             generated_nodes.append(new_node)
         
